@@ -25,6 +25,8 @@
 				</label>
 
 				<div class="menu menuEffects">
+					<a href="/" class="brand" title="Home">*</a>
+
 					<label for="menuToggle" class="inside">Fechar</label>
 
 					<div class="menuContent">
@@ -104,16 +106,124 @@
 			</div>
 
 			<div class="home-manifesto">
-				
+				<a href="" class="link-manifesto" title="">
+					<h1 class="title">Diva* <br> Manifesto</h1>
+					<div class="arrow">
+						<p>></p>
+					</div>
+				</a>
 			</div>
 		</div>
 
-		<div class="newletter">
-			
+		<div class="slider-journal">
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="row h-100">
+							<div class="col-sm-6 left">
+								<p class="subtitle">diva*journal</p>
+								<h1 class="title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</h1>
+
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+
+								<a href="#" title="" class="btn-leia-mais">entenda o assunto ></a>
+							</div>
+							<div class="col-sm-6 right" style="background-image: url('images/photo-pesquisa.jpg')"></div>
+						</div>
+					</div>
+				</div>
+				<!-- Add Arrows -->
+				<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>
+
+				<!-- Add Pagination -->
+				<div class="swiper-pagination"></div>
+			</div>
+		</div>
+
+		<div class="newsletter">
+			<div class="row m-0 h-100">
+				<div class="col-md-6 left">
+					<p class="subtitle">newsletter</p>
+
+					<h1 class="title">Curadoria, conteúdos originais, pesquisa: receba nosso menu semanal.</h1>
+					
+					<div class="form">
+						<input type="text" class="form-control newsletter-input" name="nome" placeholder="NOME">
+						<input type="text" class="form-control newsletter-input" name="email" placeholder="EMAIL">
+					</div>
+
+					<p>assinando a newsletter eu concordo em receber conteúdos e ofertas por email da diva inclusive solutions e seus parceiros.</p>
+
+					<button type="button">Enviar ></button>
+				</div>
+				<div class="col-md-6 right">
+					<img src="images/mandala.png" alt="Mandala">
+				</div>
+			</div>
 		</div>
 
 		<footer class="footer">
-			
+			<div class="row h-100 w-100">
+				<div class="col-md-6 left">
+					<h1>DIVA*</h1>
+				</div>	
+				<div class="col-md-6 right">
+					<div class="row">
+						<div class="col-md-6">
+							<ul>
+								<li>
+									<a href="#" title="Contato">contato</a>
+								</li>
+								<li>
+									<a href="#" title="Conte sua história">conte sua história</a>
+								</li>
+								<li>
+									<a href="#" title="Seja um investidor">seja um investidor</a>
+								</li>
+								<li>
+									<a href="#" title="Colabore">colabore</a>
+								</li>
+								<li>
+									<a href="#" title="Contatos úteis">contatos úteis</a>
+								</li>
+								<li>
+									<a href="#" title="Privacidade">privacidade</a>
+								</li>
+								<li>
+									<a href="#" title="Termos de uso">termos de uso</a>
+								</li>
+							</ul>
+						</div>	
+						<div class="col-md-6">
+							<ul>
+								<li>
+									<a href="#" title="se conecte">se conecte</a>
+								</li>
+								<li>
+									<a href="#" title="instagram ">instagram </a>
+								</li>
+								<li>
+									<a href="#" title="youtube">youtube</a>
+								</li>
+								<li>
+									<a href="#" title="facebook">facebook</a>
+								</li>
+								<li>
+									<a href="#" title="linkedin">linkedin</a>
+								</li>
+								<li>
+									<a href="#" title="twitter">twitter</a>
+								</li>
+							</ul>
+						</div>
+
+						<div class="col-12">
+							<p>copyright diva inclusive solutions 2021© desenvolvido por <a href="mailto:camilla.binni@gmail.com?subject=feedback">Camilla Binni</a> </p>
+						</div>
+					</div>
+				</div>
+			</div>
 		</footer>
 
 		<script src="js/jquery.min.js"></script>
@@ -124,13 +234,27 @@
 
 		<!-- Initialize Swiper -->
 		<script>
-			var swiper = new Swiper('.swiper-container', {
+			var swiper = new Swiper('.slider-home > .swiper-container', {
 				pagination: {
 					el: '.swiper-pagination',
 					clickable: true,
 					renderBullet: function (index, className) {
 						return '<span class="' + className + '">' + (index + 1) + '</span>';
 					},
+				},
+				loop: true,
+			});
+			var swiper2 = new Swiper('.slider-journal > .swiper-container', {
+				pagination: {
+					el: '.swiper-pagination',
+					clickable: true,
+					renderBullet: function (index, className) {
+						return '<span class="' + className + '">' + (index + 1) + '</span>';
+					},
+				},
+				navigation: {
+					nextEl: '.swiper-button-next',
+					prevEl: '.swiper-button-prev',
 				},
 				loop: true,
 			});

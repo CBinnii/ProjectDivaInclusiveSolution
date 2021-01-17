@@ -3,6 +3,10 @@
 		width: 100%;
 		height: 100vh;
 		background-color: $claro;
+
+		@media screen and (max-height: 500px) {
+			height: 600px;
+		}
 		
 		.swiper-slide {
 			text-align: center;

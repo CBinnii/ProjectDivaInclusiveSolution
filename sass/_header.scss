@@ -1,5 +1,5 @@
 .header {
-	position: fixed;
+	position: absolute;
 	display: flex;
 	justify-content: space-between;
 	width: 100%;
@@ -54,6 +54,10 @@
 			justify-content: center;
 			align-items: center;
 
+			@media screen and (max-height: 470px) {
+				height: 600px;
+			}
+
 			label {
 				position: absolute;
 				right: 20px;
@@ -71,6 +75,18 @@
 
 				&.inside {
 					color: $verde;
+				}
+			}
+
+			.brand {
+				position: absolute;
+				left: 15px;
+				top: 15px;
+				color: $verde;
+				text-decoration: none;
+				
+				@media screen and (min-width: 2000px) {
+					font-size: 1.5vw;
 				}
 			}
 

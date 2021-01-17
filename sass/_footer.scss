@@ -1,0 +1,66 @@
+.footer {
+	background-color: $rosa-escuro;
+	color: $verde;
+	padding: 15px 30px;
+
+	@media screen and (min-width: 2000px) {
+		padding: 1vw 1.5vw;
+	}
+
+	.left {
+		display: flex;
+		align-items: flex-end;
+
+		h1 {
+			font-family: "Monarch";
+			font-size: 35px;
+			line-height: 45px;
+
+			@media screen and (min-width: 2000px) {
+				font-size: 3vw;
+				line-height: 3vw;
+			}
+		}
+	}
+
+	.right {
+		ul {
+			padding-bottom: 15px;
+			
+			li {
+				a {
+					font-family: 'Akkurat-Mono';
+					text-transform: uppercase;
+					line-height: 1.5;
+					color: $verde;
+					font-size: 16px;
+
+					@media screen and (min-width: 2000px) {
+						font-size: 1.2vw;
+						line-height: 1.5;
+					}
+				}
+			}
+		}
+		p {
+			font-family: 'Akkurat-Mono';
+			font-size: 16px;
+			text-transform: uppercase;
+			line-height: 1.5;
+			color: $verde;
+
+			a {
+				color: $verde;
+				
+				&:hover {
+					font-weight: 700;
+				}
+			}
+			
+			@media screen and (min-width: 2000px) {
+				font-size: 1.2vw;
+				line-height: 1.5;
+			}
+		}
+	}
+}
