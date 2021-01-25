@@ -11036,10 +11036,6 @@ body {
   font-family: monospace, sans-serif;
 }
 
-body {
-  color: #E05555;
-  background-color: #EDC8C3;
-}
 body:-moz-selection {
   background: #b3d4fc;
   text-shadow: none;
@@ -11094,6 +11090,18 @@ body:selection {
   .header {
     padding: 1.5vw;
   }
+}
+.header.pink .header-brand a {
+  color: #E05555;
+}
+.header.pink .header-brand.escuro a {
+  color: #253825;
+}
+.header.black .header-brand a {
+  color: #000000;
+}
+.header.black .header-brand.escuro a {
+  color: #253825;
 }
 .header .header-brand a {
   color: #E05555;
@@ -11214,6 +11222,76 @@ body:selection {
 }
 .header .header-menu #menuToggle:not(:checked) ~ .menuEffects ul {
   transform: translateY(-30%);
+}
+
+.menu-journal {
+  margin-bottom: 30px;
+}
+.menu-journal .busca input {
+  height: 40px;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #253825;
+  color: #253825;
+  text-transform: uppercase;
+  padding-left: 40px;
+  background: url('../images/search-solid.svg?1611538230') left 10px center no-repeat;
+  background-size: 20px;
+}
+.menu-journal .busca input:focus {
+  outline: none;
+}
+.menu-journal .menu-dropdown .dropdown-button {
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-bottom: 1px solid #253825;
+  color: #253825;
+  text-transform: uppercase;
+  background-color: transparent;
+}
+.menu-journal .menu-dropdown .dropdown-button:focus {
+  outline: none;
+}
+.menu-journal .menu-dropdown .dropdown-menu {
+  width: calc(100% - 30px);
+  padding: 0;
+}
+.menu-journal .menu-dropdown .dropdown-menu li {
+  text-align: center;
+}
+.menu-journal .menu-dropdown .dropdown-menu li a {
+  padding: 12px 20px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #253825;
+}
+.menu-journal .menu-dropdown .dropdown-menu li a:hover {
+  background-color: #253825;
+  color: #FFFFFF;
+}
+.menu-journal .menu-dropdown .dropdown-menu li a:last-of-type:hover {
+  border-bottom: 1px solid #FFFFFF;
+}
+.menu-journal .menu-dropdown .dropdown-menu li.last {
+  height: 40px;
+  background-color: #253825;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.menu-journal .envie {
+  display: flex;
+  border-bottom: 1px solid #253825;
+}
+.menu-journal .envie a {
+  width: 100%;
+  padding: 10px 15px;
+  text-align: right;
+  color: #253825;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
 .slider-home .swiper-container {
@@ -11481,6 +11559,8 @@ body:selection {
 }
 
 .home {
+  color: #E05555;
+  background-color: #EDC8C3;
   padding-top: 20px;
 }
 .home .home-edicao {
@@ -11584,10 +11664,70 @@ body:selection {
   }
 }
 
+.journal {
+  padding: 15px;
+}
+.journal .header-text {
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+.journal .header-text .title {
+  font-size: 70px;
+  line-height: 89px;
+  text-align: center;
+}
+.journal .posts-journal {
+  columns: 3 300px;
+  column-gap: 30px;
+}
+.journal .posts-journal div {
+  width: 150px;
+  color: #000000;
+  margin: 0 1rem 30px 0;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+.journal .posts-journal div img {
+  width: 100%;
+  height: auto;
+}
+.journal .posts-journal div p {
+  font-family: 'Akkurat-Mono';
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 15px 0;
+  text-align: center;
+}
+.journal .posts-journal div .title {
+  font-size: 35px;
+  line-height: 46px;
+  padding: 10px;
+}
+@media screen and (min-width: 2000px) {
+  .journal .posts-journal div .title {
+    font-size: 2vw;
+    line-height: 2vw;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .journal .posts-journal div .title {
+    font-size: 25px;
+    line-height: 35px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .journal .posts-journal div .title {
+    font-size: 15px;
+    line-height: 26px;
+  }
+}
+
 .newsletter {
   width: 100%;
   height: 100vh;
   background-color: #F7F4F2;
+  color: #E05555;
 }
 @media screen and (max-height: 500px) {
   .newsletter {
@@ -11743,6 +11883,9 @@ body:selection {
   justify-content: center;
   align-items: center;
 }
+.newsletter .right.escuro {
+  background-color: #253825;
+}
 .newsletter .right img {
   max-width: 100%;
 }
@@ -11810,5 +11953,56 @@ body:selection {
   .footer .right p {
     font-size: 1.2vw;
     line-height: 1.5;
+  }
+}
+
+.reforma {
+  height: 100vh;
+  color: #E05555;
+  padding: 20px 0;
+}
+@media screen and (max-height: 470px) {
+  .reforma {
+    height: 600px;
+  }
+}
+.reforma .title {
+  font-size: 80px;
+  line-height: 99px;
+  padding-top: 15px;
+}
+@media screen and (min-width: 2000px) {
+  .reforma .title {
+    font-size: 5vw;
+    line-height: 5vw;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .reforma .title {
+    font-size: 60px;
+    line-height: 79px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .reforma .title {
+    font-size: 50px;
+    line-height: 69px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .reforma .title {
+    font-size: 35px;
+    line-height: 54px;
+  }
+}
+.reforma .subtitle {
+  font-family: 'Akkurat-Mono';
+  font-size: 16px;
+}
+@media screen and (min-width: 2000px) {
+  .reforma .subtitle {
+    font-size: 1.5vw;
+    line-height: 1.5;
+    padding: 3vw 0;
   }
 }

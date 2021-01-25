@@ -1,0 +1,89 @@
+.menu-journal {
+	// display: flex;
+	margin-bottom: 30px;
+
+	.busca {
+		input {
+			height: 40px;
+			width: 100%;
+			border: none;
+			border-bottom: 1px solid $verde;
+			color: $verde;
+			text-transform: uppercase;
+			padding-left: 40px;
+
+			background: image-url('search-solid.svg') left 10px center no-repeat;
+			background-size: 20px;
+
+			&:focus {
+				outline: none;
+			}
+		}
+	}
+
+	.menu-dropdown {
+		.dropdown-button {
+			width: 100%;
+			height: 40px;
+			border: none;
+			border-bottom: 1px solid $verde;
+			color: $verde;
+			text-transform: uppercase;
+			background-color: transparent;
+
+			&:focus {
+				outline: none;
+			}
+		}
+
+		.dropdown-menu {
+			width: calc(100% - 30px);
+			padding: 0;
+
+			li {
+				text-align: center;
+
+				a {
+					padding: 12px 20px;
+					text-transform: uppercase;
+					border-bottom: 1px solid $verde;
+
+					&:hover {
+						background-color: $verde;
+						color: $branco;
+					}
+
+					&:last-of-type {
+						&:hover {
+							border-bottom: 1px solid $branco;
+						}
+					}
+				}
+
+				&.last {
+					height: 40px;
+					background-color: $verde;
+					color: $branco;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					cursor: pointer;
+				}
+			}
+		}
+	}
+
+	.envie {
+		display: flex;
+		border-bottom: 1px solid $verde;
+
+		a {
+			width: 100%;
+			padding: 10px 15px;
+			text-align: right;
+			color: $verde;
+			text-transform: uppercase;
+			text-decoration: none;
+		}
+	}
+}

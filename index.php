@@ -7,12 +7,12 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<title>DIVA* INCLUSIVE</title>
-		<link rel="icon" type="image/x-icon" href="images/icon.png">
-		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="icon" type="image/x-icon" href="<?php echo get_stylesheet_directory_uri(); ?>/images/icon.png">
+		<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri(); ?>/css/style.css">
 	</head>
 
 	<body>
-		<header class="header pink">
+		<header class="header">
 			<div class="header-brand">
 				<a href="/" title="Home">*</a>
 			</div>
@@ -25,13 +25,13 @@
 				</label>
 
 				<div class="menu menuEffects">
-					<a href="index.html" class="brand" title="Home">*</a>
+					<a href="/" class="brand" title="Home">*</a>
 
 					<label for="menuToggle" class="inside">Fechar</label>
 
 					<div class="menuContent">
 						<ul>
-							<li><a href="journal.html">Journal</a></li>
+							<li><a href="#">Journal</a></li>
 							<li><a href="#">Manifesto</a></li>
 							<li><a href="#">Sobre</a></li>
 							<li><a href="#">Serviços</a></li>
@@ -45,14 +45,14 @@
 		<div class="slider-home">
 			<div class="swiper-container">
 				<div class="swiper-wrapper">
-					<div class="swiper-slide" style="background-image: url('images/Slider-1.jpg');">
+					<div class="swiper-slide" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/images/Slider-1.jpg');">
 						<!-- <div> -->
 							<h6 class="subtitle">Nossos serviços</h6>
 							<h1 class="title container">Diva*Lab <br> pesquisa e storytelling com dados.</h1>
 							<h6 class="subtitle">Diagnósticos, métricas e tendências em Diversidade.</h6>
 						<!-- </div> -->
 					</div>
-					<div class="swiper-slide" style="background-image: url('images/Slider-2.jpg');">
+					<div class="swiper-slide" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/images/Slider-2.jpg');">
 						<!-- <div> -->
 							<h6 class="subtitle">Nossos serviços</h6>
 							<h1 class="title container">Diva*Solutions <br> prototipar ideias, alimentar a mudança.</h1>
@@ -73,7 +73,7 @@
 							<h6 class="subtitle">Uma fórmula para ampliar seus horizontes: <br>dicas de filmes, livros, séries, artes, música e <br>perfis para seguir com foco em diversidade.</h6>
 						<!-- </div> -->
 					</div>
-					<div class="swiper-slide header-escuro" style="background-image: url('images/Slider-5.jpg');">
+					<div class="swiper-slide header-escuro" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/images/Slider-5.jpg');">
 						<!-- <div> -->
 							<h6 class="subtitle">Projeto</h6>
 							<h1 class="title container">Diva*Todes <br> linguagem inclusiva não binária</h1>
@@ -128,7 +128,7 @@
 
 								<a href="#" title="" class="btn-leia-mais">entenda o assunto ></a>
 							</div>
-							<div class="col-sm-6 right" style="background-image: url('images/photo-pesquisa.jpg')"></div>
+							<div class="col-sm-6 right" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/images/photo-pesquisa.jpg')"></div>
 						</div>
 					</div>
 				</div>
@@ -158,7 +158,7 @@
 					<button type="button">Enviar ></button>
 				</div>
 				<div class="col-md-6 right">
-					<img src="images/mandala.png" alt="Mandala">
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/mandala.png" alt="Mandala">
 				</div>
 			</div>
 		</div>
@@ -226,11 +226,11 @@
 			</div>
 		</footer>
 
-		<script src="js/jquery.min.js"></script>
-		<script src="js/popper.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
+		<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/jquery.min.js"></script>
+		<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/popper.min.js"></script>
+		<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/bootstrap.min.js"></script>
 		<!-- Swiper JS -->
-		<script src="js/swiper/swiper.js"></script>
+		<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/swiper/swiper.js"></script>
 
 		<!-- Initialize Swiper -->
 		<script>

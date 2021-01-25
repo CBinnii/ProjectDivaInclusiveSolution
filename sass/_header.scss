@@ -11,6 +11,34 @@
 		padding: 1.5vw;
 	}
 
+	&.pink {
+		.header-brand {
+			a {
+				color: $rosa-escuro;
+			}
+
+			&.escuro {
+				a {
+					color: $verde;
+				}
+			}
+		}
+	}
+
+	&.black {
+		.header-brand {
+			a {
+				color: $preto;
+			}
+
+			&.escuro {
+				a {
+					color: $verde;
+				}
+			}
+		}
+	}
+
 	.header-brand {
 		a {
 			color: $rosa-escuro;
