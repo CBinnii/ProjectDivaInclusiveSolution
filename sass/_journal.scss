@@ -1,22 +1,6 @@
 .journal {
 	padding: 15px;
 
-	.header-text {
-		padding-top: 80px;
-		padding-bottom: 40px;
-
-		.title {
-			font-size: 70px;
-			line-height: 89px;
-			text-align: center;
-
-			@media screen and (min-width: 2000px) {
-				font-size: 4vw;
-				line-height: 4vw;
-			}
-		}
-	}
-
 	.posts-journal {
 		columns: 3 300px;
 		column-gap: 30px;

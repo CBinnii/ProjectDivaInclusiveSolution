@@ -33,7 +33,7 @@
 						<ul>
 							<li><a href="journal.html">Journal</a></li>
 							<li><a href="#">Manifesto</a></li>
-							<li><a href="#">Sobre</a></li>
+							<li><a href="sobre.html">Sobre</a></li>
 							<li><a href="#">Serviços</a></li>
 							<li><a href="#">Contato</a></li>
 						</ul>

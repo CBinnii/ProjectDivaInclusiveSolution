@@ -11077,10 +11077,68 @@ body:selection {
     max-width: 80vw;
   }
 }
+.header-text {
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+.header-text .title {
+  font-size: 70px;
+  line-height: 89px;
+  text-align: center;
+}
+@media screen and (min-width: 2000px) {
+  .header-text .title {
+    font-size: 4vw;
+    line-height: 4vw;
+  }
+}
+.header-text .subtitle {
+  font-size: 16px;
+  text-align: center;
+  padding-bottom: 30px;
+}
+@media screen and (min-width: 2000px) {
+  .header-text .subtitle {
+    font-size: 1.5vw;
+  }
+}
+
+.main-image {
+  display: flex;
+  align-self: center;
+  position: relative;
+  margin: 30px 0;
+}
+.main-image .main-img {
+  height: 480px;
+  margin: 0;
+}
+.main-image .overlay-circle {
+  width: 220px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -110px;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Monarch';
+  text-transform: uppercase;
+  padding-top: 15px;
+}
+
 h1 {
   font-size: 32px;
   line-height: 42px;
   padding-bottom: 20px;
+}
+@media screen and (min-width: 2000px) {
+  h1 {
+    font-size: 3vw;
+    line-height: 3vw;
+    padding-bottom: 2vw;
+  }
 }
 
 h2 {
@@ -11088,11 +11146,25 @@ h2 {
   line-height: 36px;
   padding-bottom: 20px;
 }
+@media screen and (min-width: 2000px) {
+  h2 {
+    font-size: 2.5vw;
+    line-height: 2.5vw;
+    padding-bottom: 2vw;
+  }
+}
 
 h3 {
   font-size: 22px;
   line-height: 32px;
   padding-bottom: 20px;
+}
+@media screen and (min-width: 2000px) {
+  h3 {
+    font-size: 2.2vw;
+    line-height: 2.2vw;
+    padding-bottom: 2vw;
+  }
 }
 
 h4 {
@@ -11100,17 +11172,38 @@ h4 {
   line-height: 30px;
   padding-bottom: 20px;
 }
+@media screen and (min-width: 2000px) {
+  h4 {
+    font-size: 2vw;
+    line-height: 2vw;
+    padding-bottom: 2vw;
+  }
+}
 
 h5 {
   font-size: 18px;
   line-height: 28px;
   padding-bottom: 20px;
 }
+@media screen and (min-width: 2000px) {
+  h5 {
+    font-size: 1.8vw;
+    line-height: 1.8vw;
+    padding-bottom: 2vw;
+  }
+}
 
 h6 {
   font-size: 16px;
   line-height: 26px;
   padding-bottom: 20px;
+}
+@media screen and (min-width: 2000px) {
+  h6 {
+    font-size: 1.5vw;
+    line-height: 1.5vw;
+    padding-bottom: 2vw;
+  }
 }
 
 .header {
@@ -11776,21 +11869,6 @@ h6 {
 .journal {
   padding: 15px;
 }
-.journal .header-text {
-  padding-top: 80px;
-  padding-bottom: 40px;
-}
-.journal .header-text .title {
-  font-size: 70px;
-  line-height: 89px;
-  text-align: center;
-}
-@media screen and (min-width: 2000px) {
-  .journal .header-text .title {
-    font-size: 4vw;
-    line-height: 4vw;
-  }
-}
 .journal .posts-journal {
   columns: 3 300px;
   column-gap: 30px;
@@ -12028,7 +12106,7 @@ h6 {
 }
 @media screen and (min-width: 2000px) {
   .footer {
-    padding: 1vw 1.5vw;
+    padding: 2vw;
   }
 }
 .footer .left {
@@ -12060,7 +12138,7 @@ h6 {
 }
 @media screen and (min-width: 2000px) {
   .footer .right ul li a {
-    font-size: 1.2vw;
+    font-size: 1vw;
     line-height: 1.5;
   }
 }
@@ -12079,7 +12157,7 @@ h6 {
 }
 @media screen and (min-width: 2000px) {
   .footer .right p {
-    font-size: 1.2vw;
+    font-size: 1vw;
     line-height: 1.5;
   }
 }
@@ -12216,11 +12294,6 @@ h6 {
     line-height: 25px;
   }
 }
-.single .single-content h1, .single .single-content h2, .single .single-content h3, .single .single-content h4, .single .single-content h5, .single .single-content h6 {
-  font-family: 'Monarch';
-  text-transform: uppercase;
-  padding-top: 15px;
-}
 .single .single-content p {
   font-size: 18px;
   line-height: 1.5;
@@ -12283,4 +12356,32 @@ h6 {
 }
 .single .outros-posts .next p {
   padding-right: 20px;
+}
+
+.sobre {
+  color: #E05555;
+  padding-bottom: 60px;
+}
+.sobre .sobre-content {
+  text-align: center;
+  justify-content: center;
+}
+.sobre .sobre-content img {
+  max-width: 100%;
+  height: auto;
+  margin: 20px auto;
+}
+.sobre .sobre-content p {
+  font-size: 16px;
+  line-height: 1.5;
+  padding-bottom: 20px;
+}
+@media screen and (min-width: 2000px) {
+  .sobre .sobre-content p {
+    font-size: 1.5vw;
+    padding-bottom: 2vw;
+  }
+}
+.sobre .sobre-content .text-decoration-underline {
+  text-decoration: underline;
 }
