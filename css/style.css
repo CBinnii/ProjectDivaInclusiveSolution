@@ -12023,7 +12023,8 @@ h6 {
 .footer {
   background-color: #E05555;
   color: #253825;
-  padding: 15px 30px;
+  padding: 20px 30px;
+  padding-top: 60px;
 }
 @media screen and (min-width: 2000px) {
   .footer {
@@ -12038,6 +12039,8 @@ h6 {
   font-family: "Monarch";
   font-size: 35px;
   line-height: 45px;
+  padding: 0;
+  margin-bottom: -15px;
 }
 @media screen and (min-width: 2000px) {
   .footer .left h1 {
@@ -12248,6 +12251,16 @@ h6 {
 }
 .single .single-content ul li {
   line-height: 1.5;
+}
+.single .share .social-midias a {
+  text-decoration: none;
+}
+.single .share p {
+  padding: 20px 0px;
+}
+.single .share p a {
+  color: #253825;
+  font-weight: 700;
 }
 .single .outros-posts {
   display: flex;
