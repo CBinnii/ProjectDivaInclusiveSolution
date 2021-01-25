@@ -9,6 +9,11 @@
 			font-size: 70px;
 			line-height: 89px;
 			text-align: center;
+
+			@media screen and (min-width: 2000px) {
+				font-size: 4vw;
+				line-height: 4vw;
+			}
 		}
 	}
 
@@ -35,6 +40,11 @@
 				text-transform: uppercase;
 				padding: 15px 0;
 				text-align: center;
+
+				@media screen and (min-width: 2000px) {
+					font-size: 1vw;
+					padding: 1vw;
+				}
 			}
 
 			.title {
@@ -44,7 +54,7 @@
 
 				@media screen and (min-width: 2000px) {
 					font-size: 2vw;
-					line-height: 2vw;
+					line-height: 2.5vw;
 				}
 				
 				@media screen and (max-width: 1400px) {
@@ -57,14 +67,6 @@
 					line-height: 26px;
 				}
 			}
-		} 
-
-		// @for $i from 1 through 36 { 
-		// 	div:nth-child(#{$i}) {
-		// 		$h: (random(300) + 100) + px;
-		// 		height: $h;
-		// 		line-height: $h;
-		// 	}
-		// }
+		}
 	}
 }
