@@ -11370,6 +11370,12 @@ body:selection {
 .slider-home .swiper-container .swiper-slide.escuro {
   color: #253825;
 }
+.slider-home .swiper-container .swiper-slide.escuro .title {
+  color: #253825;
+}
+.slider-home .swiper-container .swiper-slide.escuro .subtitle {
+  color: #253825;
+}
 .slider-home .swiper-container .swiper-pagination.escuro .swiper-pagination-bullet {
   color: #253825;
 }
