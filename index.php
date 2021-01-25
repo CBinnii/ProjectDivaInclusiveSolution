@@ -32,7 +32,7 @@
 					<div class="menuContent">
 						<ul>
 							<li><a href="#">Journal</a></li>
-							<li><a href="#">Manifesto</a></li>
+							<li><a href="manifesto.html">Manifesto</a></li>
 							<li><a href="sobre.html">Sobre</a></li>
 							<li><a href="#">Serviços</a></li>
 							<li><a href="#">Contato</a></li>

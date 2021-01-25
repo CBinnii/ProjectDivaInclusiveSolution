@@ -32,7 +32,7 @@
 					<div class="menuContent">
 						<ul>
 							<li><a href="journal.html">Journal</a></li>
-							<li><a href="#">Manifesto</a></li>
+							<li><a href="manifesto.html">Manifesto</a></li>
 							<li><a href="sobre.html">Sobre</a></li>
 							<li><a href="#">Serviços</a></li>
 							<li><a href="#">Contato</a></li>
@@ -48,21 +48,21 @@
 					<div class="swiper-slide" style="background-image: url('images/Slider-1.jpg');">
 						<!-- <div> -->
 							<h6 class="subtitle">Nossos serviços</h6>
-							<h1 class="title container">Diva*Lab <br> pesquisa e storytelling com dados.</h1>
+							<h1 class="title container">Diva* Lab <br> pesquisa e storytelling com dados.</h1>
 							<h6 class="subtitle">Diagnósticos, métricas e tendências em Diversidade.</h6>
 						<!-- </div> -->
 					</div>
 					<div class="swiper-slide" style="background-image: url('images/Slider-2.jpg');">
 						<!-- <div> -->
 							<h6 class="subtitle">Nossos serviços</h6>
-							<h1 class="title container">Diva*Solutions <br> prototipar ideias, alimentar a mudança.</h1>
+							<h1 class="title container">Diva* Solutions <br> prototipar ideias, alimentar a mudança.</h1>
 							<h6 class="subtitle">planos de ação para conectar marcas e comunidades <br> através da criação e gestão de soluções para a inclusão</h6>
 						<!-- </div> -->
 					</div>
 					<div class="swiper-slide" style="background-image: url('');">
 						<!-- <div> -->
 							<h6 class="subtitle">Nossos serviços</h6>
-							<h1 class="title container">Diva*Compass <br> orientar para incluir, incluir para mudar.</h1>
+							<h1 class="title container">Diva* Compass <br> orientar para incluir, incluir para mudar.</h1>
 							<h6 class="subtitle">formações, treinamentos, consultorias em de&i.</h6>
 						<!-- </div> -->
 					</div>
@@ -76,7 +76,7 @@
 					<div class="swiper-slide header-escuro" style="background-image: url('images/Slider-5.jpg');">
 						<!-- <div> -->
 							<h6 class="subtitle">Projeto</h6>
-							<h1 class="title container">Diva*Todes <br> linguagem inclusiva não binária</h1>
+							<h1 class="title container">Diva* Todes <br> linguagem inclusiva não binária</h1>
 							<h6 class="subtitle">desenvolvendo ferramentas para combater <br>o sexismo e o binarismo na linguagem</h6>
 						<!-- </div> -->
 					</div>
@@ -89,19 +89,26 @@
 		<div class="content home">
 			<div class="home-edicao">
 				<div class="container">
-					<h3 class="subtitle">Equação diva</h3>
-					
-					<div class="titulo">
-						<h1 class="title">195 países.</h1>
-						<h1 class="title">7.53bi de pessoas.</h1>
-						<h1 class="title">7,111 idiomas.</h1>
+					<div class="row m-0 justify-content-center">
+						<h3 class="subtitle">Equação diva</h3>
+						
+						<div class="titulo">
+							<h1 class="title">195 países.</h1>
+							<h1 class="title">7.53bi de pessoas.</h1>
+							<h1 class="title">7,111 idiomas.</h1>
+						</div>
+
+						<p>Tanta gente, tanta diferença, tantas formas singulares de ver o mundo. Todas elas conectadas por traços comuns a todo ser humano. Somos todos contadores de histórias, por exemplo. Essa é uma qualidade que perpassa todas as sociedades. Mas o fato de compartilharmos características comuns não pressupõe igualdade. Nem do ponto de vista narrativo, das histórias. É preciso muita empatia para compreender que a falta de oportunidade causada pela desigualdade é um problema coletivo que só pode ser resolvido através do reconhecimento dos privilégios de uns e das dívidas históricas que a sociedade tem com outres.</p>
+
+						<div class="main-image">
+							<img class="main-img" src="images/home-1.jpg">
+							<img class="overlay-circle" src="images/break-the-bubble.svg">
+						</div>
+
+						<p>Tal consciência nos levará a priorizar o protagonismo de indivíduos e comunidades marginalizadas até que alcancemos uma maior harmonia em termos de representatividade. Essa busca é um direito e uma condição para a transformação social. A inclusão e o respeito à diversidade são pilares essenciais para construirmos um mundo mais harmonioso e igualitário. Qual o primeiro passo para iniciar esse caminho? Saia da bolha! </p>
+
+						<h3 class="subtitle">diva* united by difference</h3>
 					</div>
-
-					<p>Tanta gente, tanta diferença, tantas formas singulares de ver o mundo. Todas elas conectadas por traços comuns a todo ser humano. Somos todos contadores de histórias, por exemplo. Essa é uma qualidade que perpassa todas as sociedades. Mas o fato de compartilharmos características comuns não pressupõe igualdade. Nem do ponto de vista narrativo, das histórias. É preciso muita empatia para compreender que a falta de oportunidade causada pela desigualdade é um problema coletivo que só pode ser resolvido através do reconhecimento dos privilégios de uns e das dívidas históricas que a sociedade tem com outres.</p>
-
-					<p>Tal consciência nos levará a priorizar o protagonismo de indivíduos e comunidades marginalizadas até que alcancemos uma maior harmonia em termos de representatividade. Essa busca é um direito e uma condição para a transformação social. A inclusão e o respeito à diversidade são pilares essenciais para construirmos um mundo mais harmonioso e igualitário. Qual o primeiro passo para iniciar esse caminho? Saia da bolha! </p>
-
-					<h3 class="subtitle">diva* united by difference</h3>
 				</div>
 			</div>
 
@@ -120,15 +127,17 @@
 				<div class="swiper-wrapper">
 					<div class="swiper-slide">
 						<div class="row h-100">
-							<div class="col-sm-6 left">
+							<div class="col-lg-6 left">
 								<p class="subtitle">diva*journal</p>
 								<h1 class="title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</h1>
 
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
 
+								<img src="images/photo-pesquisa.jpg" alt="Journal">
+
 								<a href="#" title="" class="btn-leia-mais">entenda o assunto ></a>
 							</div>
-							<div class="col-sm-6 right" style="background-image: url('images/photo-pesquisa.jpg')"></div>
+							<div class="col-lg-6 right" style="background-image: url('images/photo-pesquisa.jpg')"></div>
 						</div>
 					</div>
 				</div>

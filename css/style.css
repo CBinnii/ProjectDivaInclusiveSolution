@@ -11779,13 +11779,14 @@ h6 {
     line-height: 1.5;
   }
 }
-.home .home-manifesto {
+
+.home-manifesto {
   background-image: url('../images/manifesto.jpg?1610721663');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
-.home .home-manifesto a {
+.home-manifesto a {
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -11795,42 +11796,42 @@ h6 {
   color: #E05555;
 }
 @media screen and (max-height: 470px) {
-  .home .home-manifesto a {
+  .home-manifesto a {
     height: 600px;
   }
 }
 @media screen and (max-width: 500px) {
-  .home .home-manifesto a {
+  .home-manifesto a {
     height: 100vw;
   }
 }
-.home .home-manifesto .title {
+.home-manifesto .title {
   font-size: 100px;
   line-height: 119px;
 }
 @media screen and (min-width: 2000px) {
-  .home .home-manifesto .title {
+  .home-manifesto .title {
     font-size: 7vw;
     line-height: 7vw;
   }
 }
 @media screen and (max-width: 991px) {
-  .home .home-manifesto .title {
+  .home-manifesto .title {
     font-size: 50px;
     line-height: 69px;
   }
 }
 @media screen and (max-width: 767px) {
-  .home .home-manifesto .title {
+  .home-manifesto .title {
     font-size: 35px;
     line-height: 54px;
   }
 }
-.home .home-manifesto .arrow {
+.home-manifesto .arrow {
   display: flex;
   justify-content: center;
 }
-.home .home-manifesto .arrow p {
+.home-manifesto .arrow p {
   color: #E05555;
   border: 4px solid #E05555;
   border-radius: 100%;
@@ -11844,7 +11845,7 @@ h6 {
   align-items: center;
 }
 @media screen and (min-width: 2000px) {
-  .home .home-manifesto .arrow p {
+  .home-manifesto .arrow p {
     width: 10vw;
     height: 10vw;
     font-size: 7vw;
@@ -11852,14 +11853,14 @@ h6 {
   }
 }
 @media screen and (max-width: 991px) {
-  .home .home-manifesto .arrow p {
+  .home-manifesto .arrow p {
     width: 80px;
     height: 80px;
     font-size: 65px;
   }
 }
 @media screen and (max-width: 991px) {
-  .home .home-manifesto .arrow p {
+  .home-manifesto .arrow p {
     width: 50px;
     height: 50px;
     font-size: 35px;
