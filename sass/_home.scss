@@ -50,6 +50,10 @@
 			@media screen and (max-height: 470px) {
 				height: 600px;
 			}
+
+			@media screen and (max-width: 500px) {
+				height: 100vw;
+			}
 		}
 
 		.title {
@@ -100,6 +104,12 @@
 					width: 80px;
 					height: 80px;
 					font-size: 65px;
+				}
+
+				@media screen and (max-width: 991px) {
+					width: 50px;
+					height: 50px;
+					font-size: 35px;
 				}
 			}
 		}
