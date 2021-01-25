@@ -198,22 +198,22 @@
 						<div class="col-md-6">
 							<ul>
 								<li>
-									<a href="#" title="se conecte">se conecte</a>
+									<a href="mailto:ola@divainclusive.com" target="_blank" title="se conecte">se conecte</a>
 								</li>
 								<li>
-									<a href="#" title="instagram ">instagram </a>
+									<a href="https://instagram.com/divainclusive" target="_blank" title="instagram ">instagram </a>
 								</li>
 								<li>
 									<a href="#" title="youtube">youtube</a>
 								</li>
 								<li>
-									<a href="#" title="facebook">facebook</a>
+									<a href="https://www.facebook.com/divainclusive" target="_blank" title="facebook">facebook</a>
 								</li>
 								<li>
-									<a href="#" title="linkedin">linkedin</a>
+									<a href="https://www.linkedin.com/company/diva-inclusive-solutions" target="_blank" title="linkedin">linkedin</a>
 								</li>
 								<li>
-									<a href="#" title="twitter">twitter</a>
+									<a href="https://twitter.com/DivaInclusive" target="_blank" title="twitter">twitter</a>
 								</li>
 							</ul>
 						</div>
