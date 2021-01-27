@@ -17,9 +17,85 @@
 			}
 		}
 
+		legend {
+			font-size: 12px;
+			line-height: 1.5;
+			padding-bottom: 20px;
+
+			@media screen and (min-width: 2000px) {
+				font-size: 0.7vw;
+			}
+
+			@media screen and (max-width: 767px) {
+				font-size: 10px;
+			}
+		}
+
+		ul {
+			padding-bottom: 20px;
+
+			li {
+				font-size: 18px;
+				line-height: 1.5;
+
+				@media screen and (min-width: 2000px) {
+					font-size: 1.5vw;
+				}
+
+				@media screen and (max-width: 767px) {
+					font-size: 14px;
+				}
+			}
+		}
+
+		ol {
+			padding-bottom: 20px;
+
+			li {
+				font-size: 18px;
+				line-height: 1.5;
+
+				@media screen and (min-width: 2000px) {
+					font-size: 1.5vw;
+				}
+
+				@media screen and (max-width: 767px) {
+					font-size: 14px;
+				}
+			}
+		}
+
+		a {
+			color: $rosa-escuro;
+			font-weight: bold;
+			text-decoration: underline;
+		}
+
 		img {
 			max-width: 100%;
 			height: auto;
+		}
+
+		blockquote {
+			background: $claro;
+			border-left: 10px solid $rosa-escuro;
+			margin: 10px 0;
+			padding: 20px 10px;
+			quotes: "\201C""\201D""\2018""\2019";
+			line-height: 1.5;
+			
+			&:before {
+				color: $rosa-escuro;
+				content: open-quote;
+				font-size: 4em;
+				line-height: 0.1;
+				margin-right: 0.25em;
+				vertical-align: -0.4em;
+			}
+
+			p {
+				display: inline;
+			}
 		}
 	}
 }

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: 'Akkurat-Mono';
   src: url("../font/Akkurat-Mono.woff2") format("woff2"), url("../font/Akkurat-Mono.woff") format("woff");
@@ -8,6 +9,13 @@
 @font-face {
   font-family: 'Monarch';
   src: url("../font/MONARCH_1.4.woff2") format("woff2"), url("../font/MONARCH_1.4.woff") format("woff"), url("../font/MONARCH_1.4.eot") format("eot");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Druk';
+  src: url("../font/Druk-Bold.woff2") format("woff2"), url("../font/Druk-Bold.woff") format("woff"), url("../font/Druk-Bold.ttf") format("truetype"), url("../font/Druk-Bold.eot") format("eot");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -12406,7 +12414,80 @@ h6 {
     font-size: 14px;
   }
 }
+.page .content-page legend {
+  font-size: 12px;
+  line-height: 1.5;
+  padding-bottom: 20px;
+}
+@media screen and (min-width: 2000px) {
+  .page .content-page legend {
+    font-size: 0.7vw;
+  }
+}
+@media screen and (max-width: 767px) {
+  .page .content-page legend {
+    font-size: 10px;
+  }
+}
+.page .content-page ul {
+  padding-bottom: 20px;
+}
+.page .content-page ul li {
+  font-size: 18px;
+  line-height: 1.5;
+}
+@media screen and (min-width: 2000px) {
+  .page .content-page ul li {
+    font-size: 1.5vw;
+  }
+}
+@media screen and (max-width: 767px) {
+  .page .content-page ul li {
+    font-size: 14px;
+  }
+}
+.page .content-page ol {
+  padding-bottom: 20px;
+}
+.page .content-page ol li {
+  font-size: 18px;
+  line-height: 1.5;
+}
+@media screen and (min-width: 2000px) {
+  .page .content-page ol li {
+    font-size: 1.5vw;
+  }
+}
+@media screen and (max-width: 767px) {
+  .page .content-page ol li {
+    font-size: 14px;
+  }
+}
+.page .content-page a {
+  color: #E05555;
+  font-weight: bold;
+  text-decoration: underline;
+}
 .page .content-page img {
   max-width: 100%;
   height: auto;
+}
+.page .content-page blockquote {
+  background: #F7F4F2;
+  border-left: 10px solid #E05555;
+  margin: 10px 0;
+  padding: 20px 10px;
+  quotes: "“" "”" "‘" "’";
+  line-height: 1.5;
+}
+.page .content-page blockquote:before {
+  color: #E05555;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+.page .content-page blockquote p {
+  display: inline;
 }
