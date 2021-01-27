@@ -12386,3 +12386,27 @@ h6 {
 .sobre .sobre-content .text-decoration-underline {
   text-decoration: underline;
 }
+
+.page {
+  color: #E05555;
+  padding-bottom: 70px;
+}
+.page .content-page p {
+  font-size: 18px;
+  line-height: 1.5;
+  padding-bottom: 20px;
+}
+@media screen and (min-width: 2000px) {
+  .page .content-page p {
+    font-size: 1.5vw;
+  }
+}
+@media screen and (max-width: 767px) {
+  .page .content-page p {
+    font-size: 14px;
+  }
+}
+.page .content-page img {
+  max-width: 100%;
+  height: auto;
+}

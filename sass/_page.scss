@@ -1,0 +1,25 @@
+.page {
+	color: $rosa-escuro;
+	padding-bottom: 70px;
+
+	.content-page {
+		p {
+			font-size: 18px;
+			line-height: 1.5;
+			padding-bottom: 20px;
+
+			@media screen and (min-width: 2000px) {
+				font-size: 1.5vw;
+			}
+
+			@media screen and (max-width: 767px) {
+				font-size: 14px;
+			}
+		}
+
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+	}
+}
