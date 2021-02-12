@@ -14,7 +14,22 @@
 	<body>
 		<header class="header pink">
 			<div class="header-brand">
-				<a href="https://cbinnii.github.io/ProjectDivaInclusiveSolution/" title="Home">*</a>
+				<a href="https://cbinnii.github.io/ProjectDivaInclusiveSolution/" title="Home">
+					<svg id="logo_diva_4" data-name="logo_diva 4" xmlns="http://www.w3.org/2000/svg" width="17.26" height="18.257" viewBox="0 0 17.26 18.257">
+						<g id="logo_diva_1" data-name="logo_diva 1" transform="translate(7.15)">
+							<path id="Caminho_1" data-name="Caminho 1" d="M51.31,0h0A28.745,28.745,0,0,1,49.9,8.909l-.059.205-.059-.205A29.639,29.639,0,0,1,48.38,0h2.93Z" transform="translate(-48.38)" fill="#e05555"/>
+							<path id="Caminho_2" data-name="Caminho 2" d="M48.38,12.234h0a28.746,28.746,0,0,1,1.407-8.909l.059-.205.059.205a29.639,29.639,0,0,1,1.407,8.909H48.38Z" transform="translate(-48.38 6.023)" fill="#e05555"/>
+						</g>
+						<g id="logo_diva_2" data-name="logo_diva 2" transform="translate(0 3.311)">
+							<path id="Caminho_3" data-name="Caminho 3" d="M45.94,6.421h0a28.806,28.806,0,0,1,8.41-3.253l.234-.059-.147.176a28.563,28.563,0,0,1-7.033,5.656h0Z" transform="translate(-45.94 2.692)" fill="#e05555"/>
+							<path id="Caminho_4" data-name="Caminho 4" d="M57.525,3.65h0A28.806,28.806,0,0,1,49.114,6.9l-.234.059.147-.176A28.563,28.563,0,0,1,56.06,1.13h0Z" transform="translate(-40.264 -1.13)" fill="#e05555"/>
+						</g>
+						<g id="logo_diva_3" data-name="logo_diva 3" transform="translate(0 3.311)">
+							<path id="Caminho_5" data-name="Caminho 5" d="M47.405,1.13h0a30.437,30.437,0,0,1,7.033,5.656l.147.176L54.35,6.9A28.806,28.806,0,0,1,45.94,3.65h0Z" transform="translate(-45.94 -1.13)" fill="#e05555"/>
+							<path id="Caminho_6" data-name="Caminho 6" d="M56.06,8.942h0a30.437,30.437,0,0,1-7.033-5.656L48.88,3.11l.234.059a28.806,28.806,0,0,1,8.41,3.253h0Z" transform="translate(-40.264 2.692)" fill="#e05555"/>
+						</g>
+					</svg>
+				</a>
 			</div>
 			
 			<div class="header-menu">
@@ -25,7 +40,22 @@
 				</label>
 
 				<div class="menu menuEffects">
-					<a href="index.html" class="brand" title="Home">*</a>
+					<a href="index.html" class="brand" title="Home">
+						<svg id="logo_diva_4" data-name="logo_diva 4" xmlns="http://www.w3.org/2000/svg" width="17.26" height="18.257" viewBox="0 0 17.26 18.257">
+							<g id="logo_diva_1" data-name="logo_diva 1" transform="translate(7.15)">
+								<path id="Caminho_1" data-name="Caminho 1" d="M51.31,0h0A28.745,28.745,0,0,1,49.9,8.909l-.059.205-.059-.205A29.639,29.639,0,0,1,48.38,0h2.93Z" transform="translate(-48.38)" fill="#253825"/>
+								<path id="Caminho_2" data-name="Caminho 2" d="M48.38,12.234h0a28.746,28.746,0,0,1,1.407-8.909l.059-.205.059.205a29.639,29.639,0,0,1,1.407,8.909H48.38Z" transform="translate(-48.38 6.023)" fill="#253825"/>
+							</g>
+							<g id="logo_diva_2" data-name="logo_diva 2" transform="translate(0 3.311)">
+								<path id="Caminho_3" data-name="Caminho 3" d="M45.94,6.421h0a28.806,28.806,0,0,1,8.41-3.253l.234-.059-.147.176a28.563,28.563,0,0,1-7.033,5.656h0Z" transform="translate(-45.94 2.692)" fill="#253825"/>
+								<path id="Caminho_4" data-name="Caminho 4" d="M57.525,3.65h0A28.806,28.806,0,0,1,49.114,6.9l-.234.059.147-.176A28.563,28.563,0,0,1,56.06,1.13h0Z" transform="translate(-40.264 -1.13)" fill="#253825"/>
+							</g>
+							<g id="logo_diva_3" data-name="logo_diva 3" transform="translate(0 3.311)">
+								<path id="Caminho_5" data-name="Caminho 5" d="M47.405,1.13h0a30.437,30.437,0,0,1,7.033,5.656l.147.176L54.35,6.9A28.806,28.806,0,0,1,45.94,3.65h0Z" transform="translate(-45.94 -1.13)" fill="#253825"/>
+								<path id="Caminho_6" data-name="Caminho 6" d="M56.06,8.942h0a30.437,30.437,0,0,1-7.033-5.656L48.88,3.11l.234.059a28.806,28.806,0,0,1,8.41,3.253h0Z" transform="translate(-40.264 2.692)" fill="#253825"/>
+							</g>
+						</svg>
+					</a>
 
 					<label for="menuToggle" class="inside">Fechar</label>
 
@@ -38,6 +68,8 @@
 							<li><a href="#">Contato</a></li>
 						</ul>
 					</div>
+
+					<p>diva inclusive solutions</p>
 				</div>
 			</div>
 		</header>
@@ -45,40 +77,33 @@
 		<div class="slider-home">
 			<div class="swiper-container">
 				<div class="swiper-wrapper">
-					<div class="swiper-slide" style="background-image: url('images/Slider-1.jpg');">
-						<!-- <div> -->
-							<h6 class="subtitle">Nossos serviços</h6>
+					<!-- <div class="swiper-slide" style="background-image: url('images/Slider-1.jpg');"> -->
+					<div class="swiper-slide">
+						<img src="images/Slider-1.jpg">
+						
+						<div class="overlay-slider">
+							<h6 class="subtitle pt-196">Nossos serviços</h6>
 							<h1 class="title container">Diva* Lab <br> pesquisa e storytelling com dados.</h1>
 							<h6 class="subtitle">Diagnósticos, métricas e tendências em Diversidade.</h6>
-						<!-- </div> -->
+						</div>
 					</div>
-					<div class="swiper-slide" style="background-image: url('images/Slider-2.jpg');">
-						<!-- <div> -->
-							<h6 class="subtitle">Nossos serviços</h6>
+					<div class="swiper-slide">
+						<img src="images/Slider-2.jpg">
+						
+						<div class="overlay-slider">
+							<h6 class="subtitle pt-196">Nossos serviços</h6>
 							<h1 class="title container">Diva* Solutions <br> prototipar ideias, alimentar a mudança.</h1>
 							<h6 class="subtitle">planos de ação para conectar marcas e comunidades <br> através da criação e gestão de soluções para a inclusão</h6>
-						<!-- </div> -->
+						</div>
 					</div>
-					<div class="swiper-slide" style="background-image: url('');">
-						<!-- <div> -->
-							<h6 class="subtitle">Nossos serviços</h6>
-							<h1 class="title container">Diva* Compass <br> orientar para incluir, incluir para mudar.</h1>
-							<h6 class="subtitle">formações, treinamentos, consultorias em de&i.</h6>
-						<!-- </div> -->
-					</div>
-					<div class="swiper-slide escuro" style="background-image: url(''); background-color: #E05555; color: #253825;">
-						<!-- <div> -->
-							<h6 class="subtitle">Conteúdo</h6>
+					<div class="swiper-slide escuro" style="color: #253825;">
+						<img src="images/Slider-3.jpg">
+						
+						<div class="overlay-slider">
+							<h6 class="subtitle pt-196">Conteúdo</h6>
 							<h1 class="title container">Menu Diva* <br> break your bubble</h1>
 							<h6 class="subtitle">Uma fórmula para ampliar seus horizontes: <br>dicas de filmes, livros, séries, artes, música e <br>perfis para seguir com foco em diversidade.</h6>
-						<!-- </div> -->
-					</div>
-					<div class="swiper-slide header-escuro" style="background-image: url('images/Slider-5.jpg');">
-						<!-- <div> -->
-							<h6 class="subtitle">Projeto</h6>
-							<h1 class="title container">Diva* Todes <br> linguagem inclusiva não binária</h1>
-							<h6 class="subtitle">desenvolvendo ferramentas para combater <br>o sexismo e o binarismo na linguagem</h6>
-						<!-- </div> -->
+						</div>
 					</div>
 				</div>
 				<!-- Add Pagination -->
@@ -107,16 +132,26 @@
 
 						<p>Tal consciência nos levará a priorizar o protagonismo de indivíduos e comunidades marginalizadas até que alcancemos uma maior harmonia em termos de representatividade. Essa busca é um direito e uma condição para a transformação social. A inclusão e o respeito à diversidade são pilares essenciais para construirmos um mundo mais harmonioso e igualitário. Qual o primeiro passo para iniciar esse caminho? Saia da bolha! </p>
 
-						<h3 class="subtitle">diva* united by difference</h3>
+						<h3 class="subtitle pt-196">diva* united by difference</h3>
 					</div>
 				</div>
 			</div>
 
 			<div class="home-manifesto">
 				<a href="" class="link-manifesto" title="">
+					<p class="subtitle">NOSSAS CRENÇAS</p>
+
 					<h1 class="title">Diva* <br> Manifesto</h1>
 					<div class="arrow">
-						<p>></p>
+						<svg xmlns="http://www.w3.org/2000/svg" width="122" height="122" viewBox="0 0 122 122">
+							<g id="Grupo_91" data-name="Grupo 91" transform="translate(-899 -3989)">
+								<path id="Caminho_157" data-name="Caminho 157" d="M-22.56-102.84q3.84-2.4,7.44-5.04,3.12-2.16,6.6-4.8a71.157,71.157,0,0,0,6.12-5.16,71.158,71.158,0,0,0,6.12,5.16q3.48,2.64,6.6,4.8,3.6,2.64,7.44,5.04l-.96,1.56-19.2-9.6-19.2,9.6Z" transform="translate(853.72 4052.56) rotate(90)" fill="#e05555"/>
+								<g id="Elipse_1" data-name="Elipse 1" transform="translate(899 3989)" fill="none" stroke="#e05555" stroke-width="4">
+									<circle cx="61" cy="61" r="61" stroke="none"/>
+									<circle cx="61" cy="61" r="59" fill="none"/>
+								</g>
+							</g>
+						</svg>
 					</div>
 				</a>
 			</div>
@@ -168,6 +203,7 @@
 				</div>
 				<div class="col-md-6 right">
 					<img src="images/mandala.png" alt="Mandala">
+					<p class="subtitle">diva* united by difference</p>
 				</div>
 			</div>
 		</div>
@@ -289,9 +325,21 @@
 				if ($(atual).hasClass("header-escuro") || $(atual).hasClass("escuro")) {
 					$(menu).addClass("escuro");
 					$(brand).addClass("escuro");
+					document.getElementById("Caminho_1").setAttribute("fill", "#253825")
+					document.getElementById("Caminho_2").setAttribute("fill", "#253825")
+					document.getElementById("Caminho_3").setAttribute("fill", "#253825")
+					document.getElementById("Caminho_4").setAttribute("fill", "#253825")
+					document.getElementById("Caminho_5").setAttribute("fill", "#253825")
+					document.getElementById("Caminho_6").setAttribute("fill", "#253825")
 				} else {
 					$(menu).removeClass("escuro");
 					$(brand).removeClass("escuro");
+					document.getElementById("Caminho_1").setAttribute("fill", "#E05555")
+					document.getElementById("Caminho_2").setAttribute("fill", "#E05555")
+					document.getElementById("Caminho_3").setAttribute("fill", "#E05555")
+					document.getElementById("Caminho_4").setAttribute("fill", "#E05555")
+					document.getElementById("Caminho_5").setAttribute("fill", "#E05555")
+					document.getElementById("Caminho_6").setAttribute("fill", "#E05555")
 				}
 			});
 		</script>

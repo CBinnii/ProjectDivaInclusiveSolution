@@ -92,6 +92,9 @@ body {
 	text-transform: uppercase;
 	width: 100%;
 	line-height: 1.5;
+	font-size: 16px;
+	line-height: 3.2px;
+	padding: 0;
 
 	@media screen and (min-width: 2000px) {
 		font-size: 1.5vw;
@@ -135,11 +138,25 @@ body {
 	display: flex;
 	align-self: center;
 	position: relative;
-	margin: 30px 0;
+	padding-top: 196px;
+	padding-bottom: 196px;
+
+	@media screen and (min-width: 2000px) {
+		margin: 5vw 0;
+	}
+
+	@media screen and (max-width: 1400px) {
+		padding-top: 115px;
+		padding-bottom: 115px;
+	}
 
 	.main-img {
 		height: 480px !important;
 		margin: 0 !important;
+
+		@media screen and (min-width: 2000px) {
+			height: 40vw !important;
+		}
 	}
 
 	.overlay-circle {
@@ -149,6 +166,12 @@ body {
 		transform: translateY(-50%);
 		right: -110px;
 		margin: 0;
+
+		@media screen and (min-width: 2000px) {
+			width: 25vw;
+			right: -47%;
+		}
+
 	}
 }
 
@@ -222,5 +245,13 @@ h6{
 		font-size: 1.5vw;
 		line-height: 1.5vw;
 		padding-bottom: 2vw;
+	}
+}
+
+.pt-196 {
+	padding-top: 196px;
+
+	@media screen and (max-width: 1400px) {
+		padding-top: 115px;
 	}
 }
