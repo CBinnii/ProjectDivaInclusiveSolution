@@ -11571,6 +11571,7 @@ h6 {
   .slider-home .swiper-container .swiper-slide .title {
     font-size: 60px;
     line-height: 79px;
+    padding-bottom: 50px;
   }
   .slider-home .swiper-container .swiper-slide .title.container {
     max-width: 950px;
@@ -11606,6 +11607,9 @@ h6 {
   .slider-home .swiper-container .swiper-slide .subtitle {
     font-size: 16px;
     line-height: 30px;
+  }
+  .slider-home .swiper-container .swiper-slide .subtitle.container {
+    max-width: 950px;
   }
 }
 .slider-home .swiper-container .swiper-slide.escuro {
