@@ -91,15 +91,19 @@ body {
 	font-family: 'Akkurat-Mono';
 	text-transform: uppercase;
 	width: 100%;
-	line-height: 1.5;
+	line-height: 35px;
 	font-size: 16px;
-	line-height: 3.2px;
+	letter-spacing: 3.2px;
 	padding: 0;
 
 	@media screen and (min-width: 2000px) {
 		font-size: 1.5vw;
 		line-height: 1.5;
 		padding: 1vw 0;
+	}
+
+	@media screen and (max-width: 767px) {
+		font-size: 13px;
 	}
 }
 
@@ -122,6 +126,15 @@ body {
 			font-size: 4vw;
 			line-height: 4vw;
 		}
+
+		svg {
+			width: 80vw;
+			height: auto;
+
+			overflow: hidden;
+			vertical-align: middle;
+		}
+
 	}
 	.subtitle {
 		font-size: 16px;
@@ -253,5 +266,25 @@ h6{
 
 	@media screen and (max-width: 1400px) {
 		padding-top: 115px;
+	}
+
+	@media screen and (max-width: 767px) {
+		padding-top: 95px;
+	}
+}
+
+.only-mobile {
+	display: none;
+
+	@media screen and (max-width: 767px) {
+		display: block;
+	}
+}
+
+.only-desktop {
+	display: block;
+
+	@media screen and (max-width: 767px) {
+		display: none;
 	}
 }

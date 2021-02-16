@@ -11070,9 +11070,9 @@ body:selection {
   font-family: 'Akkurat-Mono';
   text-transform: uppercase;
   width: 100%;
-  line-height: 1.5;
+  line-height: 35px;
   font-size: 16px;
-  line-height: 3.2px;
+  letter-spacing: 3.2px;
   padding: 0;
 }
 @media screen and (min-width: 2000px) {
@@ -11080,6 +11080,11 @@ body:selection {
     font-size: 1.5vw;
     line-height: 1.5;
     padding: 1vw 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .subtitle {
+    font-size: 13px;
   }
 }
 
@@ -11102,6 +11107,12 @@ body:selection {
     font-size: 4vw;
     line-height: 4vw;
   }
+}
+.header-text .title svg {
+  width: 80vw;
+  height: auto;
+  overflow: hidden;
+  vertical-align: middle;
 }
 .header-text .subtitle {
   font-size: 16px;
@@ -11246,6 +11257,29 @@ h6 {
 @media screen and (max-width: 1400px) {
   .pt-196 {
     padding-top: 115px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .pt-196 {
+    padding-top: 95px;
+  }
+}
+
+.only-mobile {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .only-mobile {
+    display: block;
+  }
+}
+
+.only-desktop {
+  display: block;
+}
+@media screen and (max-width: 767px) {
+  .only-desktop {
+    display: none;
   }
 }
 
@@ -11536,6 +11570,11 @@ h6 {
   height: auto;
   background-color: #F7F4F2;
 }
+@media screen and (max-width: 767px) {
+  .slider-home .swiper-container {
+    height: 100vh;
+  }
+}
 .slider-home .swiper-container .swiper-slide {
   text-align: center;
   font-size: 18px;
@@ -11547,15 +11586,29 @@ h6 {
   width: 100%;
   height: calc(100% - 38px);
 }
+@media screen and (max-width: 767px) {
+  .slider-home .swiper-container .swiper-slide .overlay-slider {
+    position: initial;
+    height: 100%;
+    padding: 0 30px;
+  }
+}
 .slider-home .swiper-container .swiper-slide img {
   height: auto;
   max-width: 100%;
+}
+@media screen and (max-width: 767px) {
+  .slider-home .swiper-container .swiper-slide img {
+    margin: 0 auto;
+    padding-bottom: 30px;
+  }
 }
 .slider-home .swiper-container .swiper-slide .title {
   font-size: 100px;
   line-height: 121px;
   color: #E05555;
   padding-top: 79px;
+  padding-bottom: 79px;
 }
 @media screen and (min-width: 2000px) {
   .slider-home .swiper-container .swiper-slide .title {
@@ -11571,6 +11624,7 @@ h6 {
   .slider-home .swiper-container .swiper-slide .title {
     font-size: 60px;
     line-height: 79px;
+    padding-top: 50px;
     padding-bottom: 50px;
   }
   .slider-home .swiper-container .swiper-slide .title.container {
@@ -11587,14 +11641,21 @@ h6 {
   .slider-home .swiper-container .swiper-slide .title {
     font-size: 35px;
     line-height: 54px;
+    padding: 30px 0;
+  }
+}
+.slider-home .swiper-container .swiper-slide .title svg {
+  width: 52vw;
+  height: auto;
+}
+@media screen and (max-width: 767px) {
+  .slider-home .swiper-container .swiper-slide .title svg {
+    width: 100%;
   }
 }
 .slider-home .swiper-container .swiper-slide .subtitle {
   font-family: 'Akkurat-Mono';
-  font-size: 24px;
   color: #E05555;
-  letter-spacing: 10px;
-  line-height: 50px;
 }
 @media screen and (min-width: 2000px) {
   .slider-home .swiper-container .swiper-slide .subtitle {
@@ -11604,12 +11665,13 @@ h6 {
   }
 }
 @media screen and (max-width: 1400px) {
-  .slider-home .swiper-container .swiper-slide .subtitle {
-    font-size: 16px;
-    line-height: 30px;
-  }
   .slider-home .swiper-container .swiper-slide .subtitle.container {
     max-width: 950px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .slider-home .swiper-container .swiper-slide .subtitle {
+    font-size: 13px;
   }
 }
 .slider-home .swiper-container .swiper-slide.escuro {
@@ -11833,7 +11895,7 @@ h6 {
 }
 @media screen and (min-width: 768px) {
   .home .home-edicao .container {
-    max-width: 720px;
+    max-width: 960px;
   }
 }
 .home .home-edicao .title {
@@ -12018,11 +12080,6 @@ h6 {
   background-color: #F7F4F2;
   color: #E05555;
 }
-@media screen and (min-width: 2000px) {
-  .newsletter {
-    height: auto;
-  }
-}
 .newsletter .left {
   padding: 38px 6%;
   background-color: #EDC8C3;
@@ -12036,11 +12093,6 @@ h6 {
 @media screen and (max-width: 991px) {
   .newsletter .left {
     padding: 20px 30px;
-  }
-}
-@media screen and (max-width: 767px) {
-  .newsletter .left {
-    min-height: 500px;
   }
 }
 .newsletter .left .title {
@@ -12092,10 +12144,13 @@ h6 {
   color: #E05555;
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 10px;
   border-radius: 0;
-  font-size: 22px;
-  width: 50%;
+  height: 75px;
+  line-height: 35px;
+  font-size: 16px;
+  letter-spacing: 3.2px;
+  width: 70%;
+  padding-top: 40px;
 }
 .newsletter .left .newsletter-input:focus {
   box-shadow: none;
@@ -12125,9 +12180,11 @@ h6 {
   }
 }
 .newsletter .left p {
-  line-height: 1.4;
   text-transform: uppercase;
   margin-bottom: 30px;
+  line-height: 35px;
+  font-size: 16px;
+  letter-spacing: 3.2px;
 }
 @media screen and (min-width: 2000px) {
   .newsletter .left p {
@@ -12144,13 +12201,15 @@ h6 {
 }
 .newsletter .left button {
   font-family: 'Akkurat-Mono';
-  font-size: 16px;
   text-transform: uppercase;
   color: #E05555;
   text-decoration: none;
   background-color: transparent;
   border: none;
   padding-top: 150px;
+  line-height: 35px;
+  font-size: 16px;
+  letter-spacing: 3.2px;
 }
 .newsletter .left button:hover {
   font-weight: 700;
