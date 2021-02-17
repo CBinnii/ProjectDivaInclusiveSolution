@@ -1,12 +1,22 @@
 .footer {
 	background-color: $rosa-escuro;
 	color: $verde;
-	padding: 20px 30px;
+	padding: 38px;
 	padding-top: 60px;
 
 	@media screen and (min-width: 2000px) {
 		padding: 2vw;
 		padding-top: 3vw;
+	}
+
+	@media screen and (max-width: 991px) {
+		padding: 25px;
+	}
+
+	.row {
+		@media screen and (max-width: 991px) {
+			margin: 0;
+		}
 	}
 
 	.left {
@@ -24,10 +34,18 @@
 				font-size: 4vw;
 				line-height: 3vw;
 			}
+
+			@media screen and (max-width: 991px) {
+				display: none;
+			}
 		}
 	}
 
 	.right {
+		@media screen and (max-width: 991px) {
+			padding: 0;
+		}
+
 		ul {
 			padding-bottom: 15px;
 			
@@ -35,6 +53,10 @@
 				padding-bottom: 2vw;
 			}
 			
+			@media screen and (max-width: 991px) {
+				padding: 0;
+			}
+
 			li {
 				a {
 					font-family: 'Akkurat-Mono';
@@ -49,14 +71,51 @@
 						line-height: 1.5;
 					}
 
-					@media screen and (max-width: 1400px) {
-						line-height: 25px;
-						font-size: 14px;
+					@media screen and (max-width: 991px) {
+						font-size: 13px;
+						line-height: 30px;
 					}
+				}
+
+				@media screen and (max-width: 991px) {
+					text-align: center;
 				}
 			}
 		}
-		p {
+
+		.midia-social-desktop {
+			display: block;
+
+			@media screen and (max-width: 991px) {
+				display: none;
+			}
+		}
+
+		.midia-social-mobile {
+			display: none;
+
+			@media screen and (max-width: 991px) {
+				display: block;
+				margin-top: 60px;
+				margin-bottom: 60px;
+
+				.subtitle {
+					text-align: center;
+				}
+
+				ul {
+					margin: 10px 0;
+					padding: 13px 30px;
+					border-top: 1px solid $verde;
+					border-bottom: 1px solid $verde;
+					display: flex;
+					justify-content: space-around;
+					margin-bottom: 60px;
+				}
+			}
+		}
+
+		p:not(.subtitle) {
 			font-family: 'Akkurat-Mono';
 			font-size: 16px;
 			text-transform: uppercase;
@@ -64,9 +123,10 @@
 			color: $verde;
 			letter-spacing: 3.2px;
 
-			@media screen and (max-width: 1400px) {
-				line-height: 25px;
-				font-size: 14px;
+			@media screen and (max-width: 991px) {
+				font-size: 9px;
+				line-height: 18px;
+				text-align: center;
 			}
 
 			a {
@@ -80,6 +140,12 @@
 			@media screen and (min-width: 2000px) {
 				font-size: 1.5vw;
 				line-height: 1.5;
+			}
+		}
+
+		.copyright {
+			@media screen and (max-width: 991px) {
+				padding: 0;
 			}
 		}
 	}
