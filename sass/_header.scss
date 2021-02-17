@@ -11,6 +11,10 @@
 		padding: 1.5vw;
 	}
 
+	@media screen and (max-width: 991px) {
+		padding: 25px;
+	}
+
 	&.pink {
 		.header-brand {
 			a {
@@ -76,6 +80,10 @@
 			@media screen and (min-width: 2000px) {
 				font-size: 1.5vw;
 			}
+
+			@media screen and (max-width: 991px) {
+				font-size: 13px;
+			}
 		}
 
 		.menu {
@@ -91,6 +99,10 @@
 			align-items: center;
 			padding: 38px;
 
+			@media screen and (max-width: 991px) {
+				padding: 25px;
+			}
+
 			@media screen and (max-height: 470px) {
 				height: 600px;
 			}
@@ -103,6 +115,13 @@
 				letter-spacing: 3.2px;
 				line-height: 35px;
 				text-transform: uppercase;
+
+				@media screen and (max-width: 991px) {
+					bottom: 25px;
+					left: 25px;
+					font-size: 13px;
+					line-height: 20px;
+				}
 			}
 
 			label {
@@ -120,12 +139,20 @@
 					top: 1.5vw;
 				}
 
+				@media screen and (max-width: 991px) {
+					top: 25px;
+				}
+
 				&.inside {
 					color: $verde;
 					font-size: 16px;
 					letter-spacing: 3.2px;
 					line-height: 1;
 					text-transform: uppercase;
+
+					@media screen and (max-width: 991px) {
+						font-size: 13px;
+					}
 				}
 			}
 
@@ -138,6 +165,11 @@
 				
 				@media screen and (min-width: 2000px) {
 					font-size: 1.5vw;
+				}
+
+				@media screen and (max-width: 991px) {
+					top: 25px;
+					left: 25px;
 				}
 			}
 
@@ -172,6 +204,11 @@
 
 						@media screen and (max-width: 1400px) {
 							font-size: 60px;
+							line-height: 1;
+						}
+
+						@media screen and (max-width: 991px) {
+							font-size: 35px;
 							line-height: 1;
 						}
 					}

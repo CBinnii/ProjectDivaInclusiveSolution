@@ -11085,6 +11085,7 @@ body:selection {
 @media screen and (max-width: 767px) {
   .subtitle {
     font-size: 13px;
+    line-height: 20px;
   }
 }
 
@@ -11259,9 +11260,23 @@ h6 {
     padding-top: 115px;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1300px) {
   .pt-196 {
-    padding-top: 95px;
+    padding-top: 5%;
+  }
+}
+
+.pb-196 {
+  padding-bottom: 196px;
+}
+@media screen and (max-width: 1400px) {
+  .pb-196 {
+    padding-bottom: 115px;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .pb-196 {
+    padding-bottom: 5%;
   }
 }
 
@@ -11295,6 +11310,11 @@ h6 {
 @media screen and (min-width: 2000px) {
   .header {
     padding: 1.5vw;
+  }
+}
+@media screen and (max-width: 991px) {
+  .header {
+    padding: 25px;
   }
 }
 .header.pink .header-brand a {
@@ -11341,6 +11361,11 @@ h6 {
     font-size: 1.5vw;
   }
 }
+@media screen and (max-width: 991px) {
+  .header .header-menu .menuOpen {
+    font-size: 13px;
+  }
+}
 .header .header-menu .menu {
   position: fixed;
   width: 100vw;
@@ -11353,6 +11378,11 @@ h6 {
   justify-content: center;
   align-items: center;
   padding: 38px;
+}
+@media screen and (max-width: 991px) {
+  .header .header-menu .menu {
+    padding: 25px;
+  }
 }
 @media screen and (max-height: 470px) {
   .header .header-menu .menu {
@@ -11367,6 +11397,14 @@ h6 {
   letter-spacing: 3.2px;
   line-height: 35px;
   text-transform: uppercase;
+}
+@media screen and (max-width: 991px) {
+  .header .header-menu .menu p {
+    bottom: 25px;
+    left: 25px;
+    font-size: 13px;
+    line-height: 20px;
+  }
 }
 .header .header-menu .menu label {
   position: absolute;
@@ -11384,12 +11422,22 @@ h6 {
     top: 1.5vw;
   }
 }
+@media screen and (max-width: 991px) {
+  .header .header-menu .menu label {
+    top: 25px;
+  }
+}
 .header .header-menu .menu label.inside {
   color: #253825;
   font-size: 16px;
   letter-spacing: 3.2px;
   line-height: 1;
   text-transform: uppercase;
+}
+@media screen and (max-width: 991px) {
+  .header .header-menu .menu label.inside {
+    font-size: 13px;
+  }
 }
 .header .header-menu .menu .brand {
   position: absolute;
@@ -11401,6 +11449,12 @@ h6 {
 @media screen and (min-width: 2000px) {
   .header .header-menu .menu .brand {
     font-size: 1.5vw;
+  }
+}
+@media screen and (max-width: 991px) {
+  .header .header-menu .menu .brand {
+    top: 25px;
+    left: 25px;
   }
 }
 .header .header-menu .menu .menuContent {
@@ -11434,6 +11488,12 @@ h6 {
 @media screen and (max-width: 1400px) {
   .header .header-menu .menu ul li a {
     font-size: 60px;
+    line-height: 1;
+  }
+}
+@media screen and (max-width: 991px) {
+  .header .header-menu .menu ul li a {
+    font-size: 35px;
     line-height: 1;
   }
 }
@@ -11570,15 +11630,11 @@ h6 {
   height: auto;
   background-color: #F7F4F2;
 }
-@media screen and (max-width: 767px) {
-  .slider-home .swiper-container {
-    height: 100vh;
-  }
-}
 .slider-home .swiper-container .swiper-slide {
   text-align: center;
   font-size: 18px;
   position: relative;
+  height: auto;
 }
 .slider-home .swiper-container .swiper-slide .overlay-slider {
   position: absolute;
@@ -11590,7 +11646,11 @@ h6 {
   .slider-home .swiper-container .swiper-slide .overlay-slider {
     position: initial;
     height: 100%;
-    padding: 0 30px;
+    padding: 25px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
 .slider-home .swiper-container .swiper-slide img {
@@ -11635,13 +11695,14 @@ h6 {
   .slider-home .swiper-container .swiper-slide .title {
     font-size: 50px;
     line-height: 69px;
+    padding: 3% 0;
   }
 }
 @media screen and (max-width: 767px) {
   .slider-home .swiper-container .swiper-slide .title {
     font-size: 35px;
     line-height: 54px;
-    padding: 30px 0;
+    padding: 30px 10px;
   }
 }
 .slider-home .swiper-container .swiper-slide .title svg {
@@ -11650,6 +11711,7 @@ h6 {
 }
 @media screen and (max-width: 767px) {
   .slider-home .swiper-container .swiper-slide .title svg {
+    max-width: 100%;
     width: 100%;
   }
 }
@@ -11716,6 +11778,11 @@ h6 {
 @media screen and (min-width: 2000px) {
   .swiper-container-horizontal > .swiper-pagination-bullets {
     bottom: 4vh;
+  }
+}
+@media screen and (max-width: 991px) {
+  .swiper-container-horizontal > .swiper-pagination-bullets {
+    bottom: 10px;
   }
 }
 
@@ -11893,9 +11960,35 @@ h6 {
   text-align: center;
   padding: 38px;
 }
+.home .home-edicao .container {
+  padding: 0;
+}
 @media screen and (min-width: 768px) {
   .home .home-edicao .container {
     max-width: 960px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .home .home-edicao {
+    padding: 25px;
+  }
+}
+.home .home-edicao img {
+  max-width: 860px;
+}
+@media screen and (min-width: 2000px) {
+  .home .home-edicao img {
+    max-width: 1000px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .home .home-edicao img {
+    max-width: 560px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .home .home-edicao img {
+    max-width: 300px;
   }
 }
 .home .home-edicao .title {
@@ -11911,12 +12004,22 @@ h6 {
     padding-top: 115px;
   }
 }
+@media screen and (max-width: 991px) {
+  .home .home-edicao .title:first-of-type {
+    padding-top: 5%;
+  }
+}
 .home .home-edicao .title:last-of-type {
   padding-bottom: 113px;
 }
 @media screen and (max-width: 1400px) {
   .home .home-edicao .title:last-of-type {
     padding-bottom: 82px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .home .home-edicao .title:last-of-type {
+    padding-bottom: 4%;
   }
 }
 @media screen and (min-width: 2000px) {
@@ -11929,6 +12032,18 @@ h6 {
   .home .home-edicao .title {
     font-size: 50px;
     line-height: 69px;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .home .home-edicao .title {
+    font-size: 40px;
+    line-height: 56px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .home .home-edicao .title {
+    font-size: 35px;
+    line-height: 42px;
   }
 }
 .home .home-edicao p {

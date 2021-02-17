@@ -104,6 +104,7 @@ body {
 
 	@media screen and (max-width: 767px) {
 		font-size: 13px;
+		line-height: 20px;
 	}
 }
 
@@ -268,8 +269,20 @@ h6{
 		padding-top: 115px;
 	}
 
-	@media screen and (max-width: 767px) {
-		padding-top: 95px;
+	@media screen and (max-width: 1300px) {
+		padding-top: 5%;
+	}
+}
+
+.pb-196 {
+	padding-bottom: 196px;
+
+	@media screen and (max-width: 1400px) {
+		padding-bottom: 115px;
+	}
+
+	@media screen and (max-width: 1300px) {
+		padding-bottom: 5%;
 	}
 }
 
