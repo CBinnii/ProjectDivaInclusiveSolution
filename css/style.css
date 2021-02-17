@@ -11860,7 +11860,7 @@ h6 {
     padding: 3vw 0;
   }
 }
-.slider-journal .swiper-container .swiper-slide .left p {
+.slider-journal .swiper-container .swiper-slide .left p:not(.subtitle) {
   font-family: 'Akkurat';
   font-size: 21px;
   line-height: 30px;
@@ -11868,13 +11868,13 @@ h6 {
   padding: 66px 0;
 }
 @media screen and (min-width: 2000px) {
-  .slider-journal .swiper-container .swiper-slide .left p {
+  .slider-journal .swiper-container .swiper-slide .left p:not(.subtitle) {
     font-size: 1.5vw;
     line-height: 1.5;
   }
 }
 @media screen and (max-width: 991px) {
-  .slider-journal .swiper-container .swiper-slide .left p {
+  .slider-journal .swiper-container .swiper-slide .left p:not(.subtitle) {
     display: none;
   }
 }

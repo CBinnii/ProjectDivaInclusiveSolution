@@ -62,7 +62,7 @@
 					}
 				}
 
-				p {
+				p:not(.subtitle) {
 					font-family: 'Akkurat';
 					font-size: 21px;
 					line-height: 30px;
