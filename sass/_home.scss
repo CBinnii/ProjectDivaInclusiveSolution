@@ -117,6 +117,10 @@
 	background-repeat: no-repeat;
 	padding: 38px;
 
+	@media screen and (max-width: 991px) {
+		padding: 25px;
+	}
+
 	a {
 		display: flex;
 		justify-content: center;
@@ -128,6 +132,7 @@
 		.title {
 			font-size: 100px;
 			line-height: 119px;
+			padding: 70px 0;
 
 			@media screen and (min-width: 2000px) {
 				font-size: 7vw;
@@ -137,6 +142,7 @@
 			@media screen and (max-width: 991px) {
 				font-size: 50px;
 				line-height: 69px;
+				padding: 70px 0;
 			}
 
 			@media screen and (max-width: 767px) {
@@ -148,11 +154,24 @@
 				padding-top: 200px;
 
 				@media screen and (max-width: 1400px) {
-					padding-top: 120px;
+					padding: 120px 0;
+				}
+
+				@media screen and (max-width: 991px) {
+					padding: 70px 0;
 				}
 			}
 		}
 
+		svg {
+			width: 60vw;
+			height: auto;
+			
+			@media screen and (max-width: 767px) {
+				max-width: 100%;
+				width: 100%;
+			}
+		}
 	}
 
 	.arrow {

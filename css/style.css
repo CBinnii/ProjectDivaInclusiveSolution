@@ -11797,9 +11797,13 @@ h6 {
   background-color: #F7F4F2;
   color: #E05555;
 }
+.slider-journal .swiper-container .swiper-wrapper {
+  height: auto;
+}
 .slider-journal .swiper-container .swiper-slide {
   text-align: center;
   background-color: #253825;
+  height: auto;
 }
 .slider-journal .swiper-container .swiper-slide .title {
   font-size: 55px;
@@ -11836,6 +11840,7 @@ h6 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding-bottom: 80px;
 }
 @media screen and (min-width: 2000px) {
   .slider-journal .swiper-container .swiper-slide .left {
@@ -11959,6 +11964,14 @@ h6 {
 }
 .slider-journal .swiper-container .swiper-button-prev:after {
   content: "";
+}
+.slider-journal .swiper-container .pagination-journal {
+  width: 50%;
+}
+@media screen and (max-width: 991px) {
+  .slider-journal .swiper-container .pagination-journal {
+    width: 100%;
+  }
 }
 
 .home {
@@ -12086,6 +12099,11 @@ h6 {
   background-repeat: no-repeat;
   padding: 38px;
 }
+@media screen and (max-width: 991px) {
+  .home-manifesto {
+    padding: 25px;
+  }
+}
 .home-manifesto a {
   display: flex;
   justify-content: center;
@@ -12097,6 +12115,7 @@ h6 {
 .home-manifesto a .title {
   font-size: 100px;
   line-height: 119px;
+  padding: 70px 0;
 }
 @media screen and (min-width: 2000px) {
   .home-manifesto a .title {
@@ -12108,6 +12127,7 @@ h6 {
   .home-manifesto a .title {
     font-size: 50px;
     line-height: 69px;
+    padding: 70px 0;
   }
 }
 @media screen and (max-width: 767px) {
@@ -12121,7 +12141,22 @@ h6 {
 }
 @media screen and (max-width: 1400px) {
   .home-manifesto a .title:first-of-type {
-    padding-top: 120px;
+    padding: 120px 0;
+  }
+}
+@media screen and (max-width: 991px) {
+  .home-manifesto a .title:first-of-type {
+    padding: 70px 0;
+  }
+}
+.home-manifesto a svg {
+  width: 60vw;
+  height: auto;
+}
+@media screen and (max-width: 767px) {
+  .home-manifesto a svg {
+    max-width: 100%;
+    width: 100%;
   }
 }
 .home-manifesto .arrow {

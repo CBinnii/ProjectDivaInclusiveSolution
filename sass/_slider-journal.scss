@@ -3,10 +3,15 @@
 		width: 100%;
 		background-color: $claro;
 		color: $rosa-escuro;
-
+		
+		.swiper-wrapper {
+			height: auto;
+		}
+		
 		.swiper-slide {
 			text-align: center;
 			background-color: $verde;
+			height: auto;
 
 			.title {
 				font-size: 55px;
@@ -40,6 +45,7 @@
 				display: flex;
 				flex-direction: column;
 				justify-content: space-between;
+				padding-bottom: 80px;
 
 				@media screen and (min-width: 2000px) {
 					padding: 2vw 4vw;
@@ -165,6 +171,14 @@
 			
 			&:after {
 				content: "";
+			}
+		}
+
+		.pagination-journal {
+			width: 50%;
+
+			@media screen and (max-width: 991px) {
+				width: 100%;
 			}
 		}
 	}
