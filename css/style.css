@@ -11101,8 +11101,14 @@ body:selection {
   }
 }
 .header-text {
-  padding-top: 80px;
-  padding-bottom: 40px;
+  padding-top: 150px;
+  padding-bottom: 85px;
+}
+@media screen and (max-width: 1400px) {
+  .header-text {
+    padding-top: 80px;
+    padding-bottom: 40px;
+  }
 }
 .header-text .title {
   font-size: 70px;
@@ -11116,7 +11122,7 @@ body:selection {
   }
 }
 .header-text .title svg {
-  width: 80vw;
+  max-width: 100%;
   height: auto;
   overflow: hidden;
   vertical-align: middle;
@@ -11181,7 +11187,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 32px;
+  font-size: 35px;
   line-height: 42px;
   padding-bottom: 20px;
 }
@@ -11528,7 +11534,20 @@ h6 {
 }
 
 .menu-journal {
-  margin-bottom: 30px;
+  margin-bottom: 4%;
+}
+.menu-journal .adjust-margin-journal {
+  margin-right: -8px;
+  margin-left: -8px;
+}
+.menu-journal .adjust-padding-journal {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+@media screen and (min-width: 2000px) {
+  .menu-journal {
+    margin-bottom: 19%;
+  }
 }
 .menu-journal .busca input {
   height: 40px;
@@ -11538,6 +11557,9 @@ h6 {
   color: #253825;
   text-transform: uppercase;
   padding-left: 40px;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 3.2px;
   background: url('../images/search-solid.svg?1612055118') left 10px center no-repeat;
   background-size: 20px;
 }
@@ -11561,6 +11583,9 @@ h6 {
   color: #253825;
   text-transform: uppercase;
   background-color: transparent;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 3.2px;
 }
 .menu-journal .menu-dropdown .dropdown-button:focus {
   outline: none;
@@ -11570,6 +11595,21 @@ h6 {
     height: 3vw;
     font-size: 1.3vw;
   }
+}
+.menu-journal .menu-dropdown .dropdown-toggle {
+  position: relative;
+}
+.menu-journal .menu-dropdown .dropdown-toggle:after {
+  content: url('../images/down.svg?1613665966');
+  border: none;
+  position: absolute;
+  width: 100%;
+  height: 40px;
+  left: 0;
+  bottom: -100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .menu-journal .menu-dropdown .dropdown-menu {
   width: calc(100% - 30px);
@@ -11582,6 +11622,9 @@ h6 {
   padding: 12px 20px;
   text-transform: uppercase;
   border-bottom: 1px solid #253825;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 3.2px;
 }
 .menu-journal .menu-dropdown .dropdown-menu li a:hover {
   background-color: #253825;
@@ -11613,15 +11656,18 @@ h6 {
 .menu-journal .envie {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #253825;
 }
 .menu-journal .envie a {
   width: 100%;
-  padding: 10px 15px;
+  padding: 11px 15px;
   text-align: right;
   color: #253825;
   text-transform: uppercase;
   text-decoration: none;
+  border-bottom: 1px solid #253825;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 3.2px;
 }
 @media screen and (min-width: 2000px) {
   .menu-journal .envie a {
@@ -12171,63 +12217,104 @@ h6 {
 }
 
 .journal {
-  padding: 15px;
+  padding: 38px;
+}
+@media screen and (max-width: 991px) {
+  .journal {
+    padding: 25px;
+  }
 }
 .journal .posts-journal {
   columns: 3 300px;
-  column-gap: 30px;
+  column-gap: 16px;
 }
-.journal .posts-journal div {
+.journal .posts-journal div:not(.journal-text) {
   width: 150px;
   color: #000000;
-  margin: 0 1rem 30px 0;
+  margin: 0 0 130px 0;
   display: inline-block;
   width: 100%;
   text-align: center;
 }
-.journal .posts-journal div img {
+.journal .posts-journal div:not(.journal-text) img {
   width: 100%;
   height: auto;
 }
-.journal .posts-journal div a {
+.journal .posts-journal div:not(.journal-text) a {
   color: #000000;
   text-decoration: none;
 }
-.journal .posts-journal div p {
+.journal .posts-journal div:not(.journal-text) p {
   font-family: 'Akkurat-Mono';
   font-size: 16px;
   text-transform: uppercase;
-  padding: 15px 0;
+  padding: 38px 0 64px 0;
   text-align: center;
 }
 @media screen and (min-width: 2000px) {
-  .journal .posts-journal div p {
+  .journal .posts-journal div:not(.journal-text) p {
     font-size: 1vw;
     padding: 1vw;
   }
 }
-.journal .posts-journal div .title {
+@media screen and (max-width: 1400px) {
+  .journal .posts-journal div:not(.journal-text) p {
+    padding: 25px 0 38px 0;
+  }
+}
+.journal .posts-journal div:not(.journal-text) .title {
   font-size: 35px;
   line-height: 46px;
   padding: 10px;
 }
 @media screen and (min-width: 2000px) {
-  .journal .posts-journal div .title {
+  .journal .posts-journal div:not(.journal-text) .title {
     font-size: 2vw;
     line-height: 2.5vw;
   }
 }
 @media screen and (max-width: 1400px) {
-  .journal .posts-journal div .title {
+  .journal .posts-journal div:not(.journal-text) .title {
     font-size: 25px;
     line-height: 35px;
   }
 }
 @media screen and (max-width: 991px) {
-  .journal .posts-journal div .title {
+  .journal .posts-journal div:not(.journal-text) .title {
     font-size: 15px;
     line-height: 26px;
   }
+}
+.journal .pagination-journal {
+  justify-content: center;
+  align-items: center;
+}
+.journal .pagination-journal .page-link {
+  color: #253825;
+  background-color: #FFFFFF;
+  border: none;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 3.2px;
+  outline: none;
+}
+@media screen and (max-width: 991px) {
+  .journal .pagination-journal .page-link {
+    font-size: 13px;
+  }
+}
+.journal .pagination-journal .page-link span {
+  margin: 0 40px;
+}
+@media screen and (max-width: 991px) {
+  .journal .pagination-journal .page-link span {
+    margin: 0 20px;
+  }
+}
+.journal .pagination-journal .page-link:hover, .journal .pagination-journal .page-link:focus {
+  outline: none;
+  box-shadow: none;
+  text-decoration: underline;
 }
 
 .newsletter {
@@ -12630,12 +12717,12 @@ h6 {
 }
 @media screen and (min-width: 1700px) {
   .single .container {
-    min-width: 1530px;
+    min-width: 1535px;
   }
 }
 .single .subtitle {
   font-size: 16px;
-  padding: 20px 0;
+  padding: 20px 0 46px 0;
 }
 @media screen and (min-width: 2000px) {
   .single .subtitle {
@@ -12644,11 +12731,18 @@ h6 {
 }
 .single .header-post {
   text-align: center;
+  margin-bottom: 60px;
+}
+@media screen and (max-width: 1400px) {
+  .single .header-post {
+    margin-bottom: 30px;
+  }
 }
 .single .header-post .title {
   font-size: 70px;
-  line-height: 89px;
+  line-height: 85px;
   padding: 20px 15px;
+  padding-bottom: 65px;
 }
 @media screen and (min-width: 2000px) {
   .single .header-post .title {
@@ -12704,25 +12798,101 @@ h6 {
     line-height: 25px;
   }
 }
-.single .single-content p {
-  font-size: 18px;
-  line-height: 1.5;
-  padding-bottom: 20px;
+.single .single-content p:not(.subtitle) {
+  font-family: 'Akkurat';
+  font-size: 21px;
+  line-height: 30px;
+  letter-spacing: 0.32px;
+  padding-bottom: 45px;
 }
 @media screen and (min-width: 2000px) {
-  .single .single-content p {
+  .single .single-content p:not(.subtitle) {
     font-size: 1.5vw;
   }
 }
 .single .single-content img {
   max-width: 100%;
   height: auto;
-  margin-bottom: 10px;
+  margin-bottom: 24px;
+}
+.single .single-content h1 {
+  font-size: 35px;
+  line-height: 42px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 2000px) {
+  .single .single-content h1 {
+    font-size: 3vw;
+    line-height: 3vw;
+    padding-bottom: 2vw;
+  }
+}
+.single .single-content h2 {
+  font-size: 25px;
+  line-height: 36px;
+  padding-bottom: 20px;
+}
+@media screen and (min-width: 2000px) {
+  .single .single-content h2 {
+    font-size: 2.5vw;
+    line-height: 2.5vw;
+    padding-bottom: 2vw;
+  }
+}
+.single .single-content h3 {
+  font-size: 22px;
+  line-height: 32px;
+  padding-bottom: 20px;
+}
+@media screen and (min-width: 2000px) {
+  .single .single-content h3 {
+    font-size: 2.2vw;
+    line-height: 2.2vw;
+    padding-bottom: 2vw;
+  }
+}
+.single .single-content h4 {
+  font-size: 20px;
+  line-height: 30px;
+  padding-bottom: 20px;
+}
+@media screen and (min-width: 2000px) {
+  .single .single-content h4 {
+    font-size: 2vw;
+    line-height: 2vw;
+    padding-bottom: 2vw;
+  }
+}
+.single .single-content h5 {
+  font-size: 18px;
+  line-height: 28px;
+  padding-bottom: 20px;
+}
+@media screen and (min-width: 2000px) {
+  .single .single-content h5 {
+    font-size: 1.8vw;
+    line-height: 1.8vw;
+    padding-bottom: 2vw;
+  }
+}
+.single .single-content h6 {
+  font-size: 16px;
+  line-height: 26px;
+  padding-bottom: 20px;
+}
+@media screen and (min-width: 2000px) {
+  .single .single-content h6 {
+    font-size: 1.5vw;
+    line-height: 1.5vw;
+    padding-bottom: 2vw;
+  }
 }
 .single .single-content legend {
-  font-size: 13px;
-  line-height: 1.3;
-  padding-bottom: 20px;
+  font-family: 'Akkurat';
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.35px;
+  padding-bottom: 50px;
 }
 @media screen and (min-width: 2000px) {
   .single .single-content legend {
@@ -12891,4 +13061,185 @@ h6 {
 }
 .page .content-page blockquote p {
   display: inline;
+}
+
+.contato {
+  color: #E05555;
+  padding-bottom: 175px;
+}
+.contato .form-tabs .tab {
+  background-color: #FFFFFF;
+  height: 0;
+  opacity: 0;
+  min-height: 0;
+  width: 100%;
+  overflow: hidden;
+  transition: opacity .25s ease-in-out;
+  -o-transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;
+}
+.contato .form-tabs .tab p {
+  font-family: 'Akkurat-Mono';
+  font-size: 21px;
+  text-align: center;
+  line-height: 30px;
+  letter-spacing: 0.32px;
+  padding-bottom: 64px;
+}
+.contato .form-tabs .tab p.container {
+  max-width: 915px;
+}
+.contato .form-tabs .tab .close {
+  position: absolute;
+  font-size: 21px;
+  top: 0;
+  right: 10px;
+  font-weight: bold;
+  line-height: 1;
+  color: #000;
+  text-shadow: 0 1px 0 #FFFFFF;
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  margin-top: -2px;
+}
+.contato .form-tabs .menu {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  margin-bottom: 113px;
+}
+.contato .form-tabs .rd__tab {
+  display: none;
+}
+.contato .form-tabs .rd__tab:nth-of-type(1):checked ~ .menu .tab__label:nth-of-type(1), .contato .form-tabs .rd__tab:nth-of-type(2):checked ~ .menu .tab__label:nth-of-type(2), .contato .form-tabs .rd__tab:nth-of-type(3):checked ~ .menu .tab__label:nth-of-type(3), .contato .form-tabs .rd__tab:nth-of-type(4):checked ~ .menu .tab__label:nth-of-type(4), .contato .form-tabs .rd__tab:nth-of-type(5):checked ~ .menu .tab__label:nth-of-type(5), .contato .form-tabs .rd__tab:nth-of-type(6):checked ~ .menu .tab__label:nth-of-type(6) {
+  border-bottom: 4px solid #E05555;
+  z-index: 1;
+}
+.contato .form-tabs .rd__tab:nth-of-type(1):checked ~ .tab:nth-of-type(2), .contato .form-tabs .rd__tab:nth-of-type(2):checked ~ .tab:nth-of-type(3), .contato .form-tabs .rd__tab:nth-of-type(3):checked ~ .tab:nth-of-type(4), .contato .form-tabs .rd__tab:nth-of-type(4):checked ~ .tab:nth-of-type(5), .contato .form-tabs .rd__tab:nth-of-type(5):checked ~ .tab:nth-of-type(6), .contato .form-tabs .rd__tab:nth-of-type(6):checked ~ .tab:nth-of-type(7) {
+  min-height: 300px;
+  height: auto;
+  padding: 15px;
+  opacity: 1;
+  transition: opacity .25s ease-in-out;
+  -o-transition: opacity .25s ease-in-out;
+  -ms-transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;
+}
+.contato .form-tabs .tab__label {
+  position: relative;
+  color: #E05555;
+  text-align: center;
+  user-select: none;
+  cursor: pointer;
+  margin: 0;
+  padding: 0 3px;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 3.2px;
+  text-transform: uppercase;
+  border: none;
+  background-color: #FFFFFF;
+}
+.contato .form-email .border-bottom {
+  border-color: #E05555 !important;
+  margin-bottom: 20px;
+}
+.contato .form-email .label-width {
+  width: 130px;
+}
+.contato .form-email .input-width {
+  width: calc(100% - 130px);
+}
+.contato .form-email label {
+  font-family: 'Akkurat-Mono';
+  font-size: 16px;
+  letter-spacing: 3.2px;
+  line-height: 20px;
+  text-transform: uppercase;
+  height: 45px;
+  display: flex;
+  align-items: center;
+}
+.contato .form-email input {
+  font-family: 'Akkurat-Mono';
+  font-size: 21px;
+  background-color: transparent;
+  border: none;
+  color: #E05555;
+  text-align: left;
+  border-radius: 0;
+  height: 45px;
+  line-height: 35px;
+  letter-spacing: 0.32px;
+  width: 100%;
+}
+.contato .form-email textarea {
+  font-family: 'Akkurat-Mono';
+  font-size: 21px;
+  line-height: 35px;
+  letter-spacing: 0.32px;
+  color: #E05555;
+  width: 100%;
+  height: 450px;
+  border: none;
+  border-bottom: 1px solid #E05555;
+  border-top: 1px solid #E05555;
+  padding: 40px 0;
+  margin-top: 45px;
+}
+.contato .form-email .btn-enviar {
+  background-color: #E05555;
+  color: #FFFFFF;
+  padding-left: 35px;
+  padding-right: 24px;
+  margin-top: 60px;
+  border: none;
+  outline: none;
+  width: 450px;
+  font-family: 'Akkurat-Mono';
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: 3.2px;
+  text-transform: uppercase;
+  height: 84px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 1400px) {
+  .contato .form-email .btn-enviar {
+    width: 330px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .contato .form-email .btn-enviar {
+    width: 200px;
+  }
+}
+.contato input:focus, .contato textarea:focus {
+  box-shadow: none;
+  outline: none;
+}
+.contato input::-webkit-input-placeholder, .contato textarea::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #E05555;
+}
+.contato input::-moz-placeholder, .contato textarea::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #E05555;
+}
+.contato input:-ms-input-placeholder, .contato textarea:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #E05555;
+}
+.contato input:-moz-placeholder, .contato textarea:-moz-placeholder {
+  /* Firefox 18- */
+  color: #E05555;
 }
