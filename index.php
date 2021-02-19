@@ -65,7 +65,7 @@
 							<li><a href="manifesto.html">Manifesto</a></li>
 							<li><a href="sobre.html">Sobre</a></li>
 							<li><a href="servicos.html">Serviços</a></li>
-							<li><a href="#">Contato</a></li>
+							<li><a href="contato.html">Contato</a></li>
 						</ul>
 					</div>
 
