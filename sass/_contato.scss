@@ -122,6 +122,28 @@
 			width: calc(100% - 130px);
 		}
 
+		.enviar-arquivo {
+			input[type="file"] {
+				display: none;
+			}
+			label {
+				padding: 27px;
+				width: 90%;
+				height: auto;
+				font-size: 24px;
+				letter-spacing: 3.2px;
+				line-height: 1;
+				background-color: $branco;
+				border: 1px solid $rosa-escuro;
+				color: $rosa-escuro;
+				text-transform: uppercase;
+				display: flex;
+				margin-top: 10px;
+				cursor: pointer;
+				align-items: center;
+			}
+		}
+
 		label {
 			font-family: 'Akkurat-Mono';
 			font-size: 16px;

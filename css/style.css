@@ -13157,6 +13157,25 @@ h6 {
 .contato .form-email .input-width {
   width: calc(100% - 130px);
 }
+.contato .form-email .enviar-arquivo input[type="file"] {
+  display: none;
+}
+.contato .form-email .enviar-arquivo label {
+  padding: 27px;
+  width: 90%;
+  height: auto;
+  font-size: 24px;
+  letter-spacing: 3.2px;
+  line-height: 1;
+  background-color: #FFFFFF;
+  border: 1px solid #E05555;
+  color: #E05555;
+  text-transform: uppercase;
+  display: flex;
+  margin-top: 10px;
+  cursor: pointer;
+  align-items: center;
+}
 .contato .form-email label {
   font-family: 'Akkurat-Mono';
   font-size: 16px;
